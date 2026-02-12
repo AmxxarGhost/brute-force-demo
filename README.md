@@ -18,11 +18,15 @@ A cybersecurity educational project that demonstrates brute force attacks and th
 - **Basic rate limiting** (5 attempts per minute, 5-minute block)
 
 ### 🚀 Additional Features
-- Dictionary attacks using common passwords
-- True brute force attacks with character combinations
-- Multi-IP attacks to bypass rate limiting
-- Real-time statistics and logging
-- Interactive menu system
+- **Dictionary attacks** using common and breached password lists
+- **Hybrid attacks** combining dictionary words with patterns
+- **True brute force attacks** with configurable character sets
+- **Multi-IP attacks** to bypass rate limiting
+- **Credential stuffing** using leaked credential pairs
+- **Timing attacks** for information gathering
+- **Rainbow table attacks** using precomputed hashes
+- **Comprehensive logging** and statistics tracking
+- **Interactive and automated demo modes**
 
 ## 🛠️ Installation & Setup
 
@@ -35,20 +39,42 @@ A cybersecurity educational project that demonstrates brute force attacks and th
 # Navigate to the project directory
 cd brute-force-demo
 
-# Run the main demo
+# Run the main interactive demo
 python brute_force_demo.py
+
+# Run the enhanced automated demo (recommended)
+python enhanced_demo.py
 ```
 
 ## 📖 How to Use
+
+### Demo Options
+
+#### Enhanced Automated Demo (Recommended)
+Run `python enhanced_demo.py` for a comprehensive demonstration of all attack methods:
+- Dictionary attacks
+- Hybrid attacks (dictionary + patterns)
+- Credential stuffing attacks
+- Timing attacks (information gathering)
+- Rainbow table attacks
+- Rate limiting effectiveness
+- Multi-IP bypass attempts
+
+#### Interactive Demo
+Run `python brute_force_demo.py` for hands-on exploration with these menu options:
 
 ### Main Menu Options
 1. **View system users** - See available test accounts
 2. **Dictionary Attack** - Try common passwords
 3. **Brute Force Attack** - Try all possible combinations
 4. **Multi-IP Attack** - Simulate attacks from multiple IPs
-5. **View Attack Statistics** - See detailed attack logs
-6. **Reset System** - Clear all logs and blocks
-7. **Exit** - Quit the demo
+5. **Hybrid Attack** - Dictionary + patterns (years, symbols, substitutions)
+6. **Credential Stuffing Attack** - Use leaked credentials
+7. **Timing Attack** - Analyze response times
+8. **Rainbow Table Attack** - Precomputed hash lookup
+9. **View Attack Statistics** - See detailed attack logs
+10. **Reset System** - Clear all logs and blocks
+11. **Exit** - Quit the demo
 
 ### Test Accounts
 The system includes these test users:
@@ -98,6 +124,35 @@ A security measure that controls the rate of requests received from a particular
 - Complexity exponentially increases difficulty
 
 ## 📊 Example Outputs
+
+### Enhanced Demo Output
+```
+ENHANCED CYBERSECURITY ATTACK SIMULATION DEMO
+======================================================================
+1. SYSTEM USERS:
+   - admin
+   - user
+   - test
+
+2. DICTIONARY ATTACK DEMO
+==================================================
+Target: admin user
+Method: Common password list
+PASSWORD FOUND: 'password123'
+Total attempts: 3
+Time taken: 0.20 seconds
+SUCCESS: Dictionary attack successful!
+
+3. CREDENTIAL STUFFING DEMO
+==================================================
+Target: test account
+Method: Leaked credentials database
+PASSWORD FOUND via credential stuffing: '123456'
+Source: Leaked credentials database
+Total attempts: 2
+Time taken: 0.10 seconds
+SUCCESS: Credential stuffing successful!
+```
 
 ### Successful Dictionary Attack
 ```
