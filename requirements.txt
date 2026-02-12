@@ -1,0 +1,8 @@
+# Brute Force Demo - Educational Cybersecurity Project
+# No external dependencies required - uses only Python standard library
+
+# Python version requirement
+python>=3.6
+
+# Optional: For enhanced terminal colors (install with: pip install colorama)
+# colorama>=0.4.4
